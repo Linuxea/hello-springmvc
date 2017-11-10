@@ -14,9 +14,10 @@
     <mvc:interceptors>
         <mvc:interceptor>
             <mvc:mapping path="/*" />
-            <bean class="com.linuxea.interceptor.LogInterceptor"></bean>
+            <bean class="com.linuxea.interceptor.LogInterceptor"/>
         </mvc:interceptor>
     </mvc:interceptors>
 
-
+    <bean class="org.springframework.web.servlet.mvc.annotation.DefaultAnnotationHandlerMapping"/>
+    <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter"/>
 </beans>
